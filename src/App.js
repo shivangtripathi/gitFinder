@@ -1,9 +1,9 @@
 import React,{useState,useEffect} from 'react';
 import tachyons from 'tachyons';
+require('dotenv').config();
 
-
-const client_id =process.env.client_id;
-const secret_key =process.env.secret_key;
+const client_id =process.env.REACT_APP_CLIENT_ID;
+const secret_key =process.env.REACT_APP_SECRET_KEY ;
 const url = 'https://api.github.com/users/'
 
 
